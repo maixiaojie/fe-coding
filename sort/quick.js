@@ -2,7 +2,7 @@
  * @Author: wenyujie
  * @LastEditors: wenyujie
  * @Date: 2020-12-22 15:12:16
- * @LastEditTime: 2020-12-22 15:16:35
+ * @LastEditTime: 2020-12-22 15:57:32
  * @Description: quicksort
  * @FilePath: /sort/quick.js
  * @powerd by wenyujie
@@ -10,6 +10,11 @@
 
 var arr = [1, 9, 2, 4, 12, 0, 33, 56, 89, 1, 4, 6];
 
+/**
+ * @description: 快速排序
+ * @param {*}
+ * @return {*}
+ */
 var quickSort = function (arr) {
   if (arr.length < 2) {
     return arr;
