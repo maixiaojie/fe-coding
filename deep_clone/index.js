@@ -2,7 +2,7 @@
  * @Author: wenyujie
  * @LastEditors: wenyujie
  * @Date: 2020-12-25 15:18:00
- * @LastEditTime: 2020-12-25 15:22:30
+ * @LastEditTime: 2020-12-25 15:25:23
  * @Description: 深拷贝
  * @FilePath: /deep_clone/index.js
  * @powerd by wenyujie
@@ -27,4 +27,3 @@ function deepClone(target) {
 }
 
 console.log(deepClone({ a: 1, b: 2, v: { d: 2 } }));
-
