@@ -2,7 +2,7 @@
  * @Author: wenyujie
  * @LastEditors: wenyujie
  * @Date: 2020-12-25 18:23:10
- * @LastEditTime: 2020-12-25 18:30:37
+ * @LastEditTime: 2020-12-25 18:55:45
  * @Description: 两数之和
  * @FilePath: /algorithm/twosum.js
  * @powerd by hundun
@@ -19,7 +19,6 @@ var twoSum = function (nums, target) {
     }
     console.log(map)
   }
-  
   return []
 };
 var list = [1, 2, 6, 12, 3, 16]
