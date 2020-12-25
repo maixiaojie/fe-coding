@@ -2,7 +2,7 @@
  * @Author: wenyujie
  * @LastEditors: wenyujie
  * @Date: 2020-12-25 14:27:39
- * @LastEditTime: 2020-12-25 14:43:29
+ * @LastEditTime: 2020-12-25 14:44:10
  * @Description: new
  * @FilePath: /new/index.js
  * @powerd by hundun
@@ -23,7 +23,6 @@ function myNew() {
   var constructor = args.shift();
   var context = Object.create(constructor.prototype);
   var result = constructor.apply(context, args);
-
   return typeof result === "object" && result !== null ? result : context;
 }
 
@@ -31,4 +30,4 @@ function Person(name, age) {
   this.name = name;
   this.age = age;
 }
-var a = myNew(Person, "老王", "30");
+var person = myNew(Person, "老王", "30");
