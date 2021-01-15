@@ -2,7 +2,7 @@
  * @Author: wenyujie
  * @LastEditors: wenyujie
  * @Date: 2021-01-15 10:06:27
- * @LastEditTime: 2021-01-15 10:43:34
+ * @LastEditTime: 2021-01-15 10:53:27
  * @Description: 遍历树
  * @FilePath: /algorithm/getObjAttr.js
  * @powerd by hundun
@@ -42,7 +42,7 @@ getObjAttr(obj, console.log);
 // 11
 // 10
 // 0
-console.log('-------------')
+console.log("-------------");
 
 function getObjAttr1(obj, action) {
   if (!isObj(obj)) return;
@@ -68,7 +68,7 @@ getObjAttr1(obj, console.log);
 // 2
 // 1
 
-console.log('-------------')
+console.log("-------------");
 function getObjAttr2(obj, action) {
   if (!isObj(obj)) return;
   var queue = [];
@@ -84,8 +84,12 @@ function getObjAttr2(obj, action) {
     }
   }
 }
-
-getObjAttr2(obj, console.log);
+var rs = [];
+var save = function (item) {
+  rs.push(item);
+};
+getObjAttr2(obj, save);
+console.log(rs)
 // 0
 // 0
 // 1
